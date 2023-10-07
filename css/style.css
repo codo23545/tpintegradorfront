@@ -1,0 +1,282 @@
+:root {
+  scroll-behavior: smooth;
+  --gray: rgb(56, 61, 68);
+  --green: rgb(31, 168, 61);
+  --white: rgb(253, 253, 253);
+  --darkgreen: rgba(28, 54, 67, 1);
+  --lightgreen: rgba(30, 83, 113, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 300;
+  background-color: var(--gray);
+}
+
+.nav-link__direct {
+  color: var(--green);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.541);
+  position: absolute;
+  width: 100%;
+  margin: 0;
+
+}
+
+h2 {
+  color: var(--white);
+  text-align: right;
+}
+
+h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.1;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .65rem;
+  margin-top: .8rem;
+}
+
+.hero p {
+  color: var(--white);
+  text-align: right;
+  width: 100%;
+  max-width: 600px;
+  text-shadow: 2px 2px 0.8px rgb(0, 0, 0);
+}
+
+.btn__quiero {
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: .3rem;
+  padding: .3rem 1rem;
+}
+
+.btn__quiero:hover {
+  color: rgb(0, 0, 0);
+  background-color: var(--white);
+  transition: all .5s ease;
+}
+
+.btn__comprar {
+  color: black;
+  background-color: var(--green);
+  border: none;
+  color: white;
+}
+
+.form-btns,
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__rows {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 1rem;
+}
+
+p.salida {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(204, 229, 255);
+  padding: 10px 20px;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+
+input,
+select,
+label {
+  display: inline;
+  width: calc(50% - 4px);
+}
+
+
+
+.textos__baires {
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+.textos__baires p {
+  font-size: .76rem;
+  line-height: 1.3rem;
+}
+
+.textos__baires a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: .76rem;
+  padding: .4rem;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+}
+
+.formulario {
+  padding: 0 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.formulario p {
+  text-align: center;
+  font-size: .9rem;
+}
+
+.formulario p a {
+  color: black;
+}
+
+.formulario p a:hover {
+  color: var(--green)
+}
+
+form {
+  text-align: center;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  width: 100%;
+}
+
+label {
+  font-size: .9rem;
+}
+
+input#email {
+  width: 100%;
+}
+
+input,
+select {
+  margin: .5rem 0;
+  height: 1.8rem;
+  padding: 0 .5rem;
+  font-size: .76rem;
+}
+
+textarea {
+  margin-top: .5rem;
+  height: 6.5rem;
+  font-size: 1.1rem;
+  padding: .5rem 1rem;
+}
+
+.form-btns,
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__rows {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 1rem;
+}
+
+p.salida {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(204, 229, 255);
+  padding: 10px 20px;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+
+#submit,
+#resetBtn,
+#resumenBtn {
+  color: var(--white);
+  background-color: rgb(150, 201, 62);
+  height: 2.5rem;
+  font-size: 1rem;
+}
+
+  input,
+  select,
+  label {
+    display: inline;
+    width: calc(50% - 4px);
+  }
+
+  .form__nota {
+    display: block;
+    font-size: .7rem;
+    text-align: left;
+    color: rgb(180, 176, 176);
+  }
+/* FOOTER */
+.footer {
+  background-image: linear-gradient(to right, #004d7a, #008793);
+}
+
+.footer .container-footer {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .container-footer a {
+  text-decoration: none;
+  color: var(--gray-200);
+  padding: 3rem 0;
+  width: 100px;
+  text-align: center;
+}
+
+.footer .container-footer a:hover {
+  color: var(--gray-500);
+}
+
+  
